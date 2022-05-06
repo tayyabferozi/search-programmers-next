@@ -714,140 +714,6 @@
   }
 }
 
-.dark-mode {
-  background-color: $color12;
-
-  #main-layout {
-    #header {
-      background-color: $color11;
-
-      .menu-sm {
-        background-color: $color11;
-
-        .close {
-          color: #fff;
-        }
-      }
-
-      a:not(:hover),
-      a.active,
-      .options .custom-select-container .selected-text {
-        color: #fff;
-      }
-
-      .options .custom-select-container .selected-text {
-        &::after {
-          content: url("../assets/vectors/chevron-white.svg");
-        }
-      }
-    }
-
-    #footer {
-      .social {
-        .btn {
-          border-color: #fff;
-
-          img {
-            filter: invert(97%) sepia(97%) saturate(14%) hue-rotate(235deg)
-              brightness(104%) contrast(102%);
-          }
-        }
-      }
-    }
-  }
-
-  #landing-hero {
-    .search-container,
-    .search-container input {
-      background-color: $color10;
-    }
-
-    .search-container img {
-      filter: invert(100%) sepia(1%) saturate(0%) hue-rotate(186deg)
-        brightness(105%) contrast(101%);
-    }
-  }
-
-  #landing-process {
-    .bg-left-dark,
-    .bg-right-dark {
-      opacity: 1;
-    }
-
-    .bg-left,
-    .bg-right {
-      opacity: 0;
-    }
-
-    .cards {
-      .arrow-1,
-      .arrow-2 {
-        filter: invert(94%) sepia(0%) saturate(0%) hue-rotate(276deg)
-          brightness(110%) contrast(101%);
-      }
-
-      .card {
-        background-color: $color10;
-
-        h5 {
-          color: $color1;
-        }
-      }
-    }
-  }
-
-  #landing-categories {
-    background-color: $color10;
-  }
-
-  #landing-stats {
-    .card {
-      background-color: $color10;
-    }
-  }
-
-  #footer {
-    position: relative;
-    background-color: $color12;
-
-    .contact-icon {
-      filter: invert(100%) sepia(1%) saturate(0%) hue-rotate(186deg)
-        brightness(105%) contrast(101%);
-    }
-
-    .copyright {
-      color: #fff;
-      border-top-color: rgba(255, 255, 255, 0.1);
-    }
-  }
-
-  #search-results {
-    .result-card {
-      background-color: $color10;
-
-      * {
-        color: #fff;
-      }
-    }
-
-    .filter-items {
-      background-color: $color10;
-
-      .item {
-        &.with-chevron {
-          &::after {
-            content: url("../assets/vectors/chevron-white.svg");
-          }
-        }
-
-        * {
-          color: #fff;
-        }
-      }
-    }
-  }
-}
-
 #form-login {
   position: relative;
   overflow: hidden;
@@ -1032,6 +898,10 @@
 
   .plans {
     border: 1px solid #dadbdd;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 2px 4px 23px 0px #0000001a;
 
     .tabs {
       display: flex;
@@ -1050,7 +920,7 @@
         border-right: 1px solid #dadbdd;
 
         &:last-child {
-          border-right: 0;
+          // border-right: 0;
         }
 
         &.active {
@@ -1062,7 +932,6 @@
 
     .tab-contents {
       padding: 1.5rem;
-      background-color: #fff;
 
       ul {
         margin-top: 1rem;
@@ -1287,4 +1156,164 @@
 
 .text-wrap {
   position: relative;
+}
+
+.dark-mode {
+  background-color: $color12;
+
+  #main-layout {
+    #header {
+      background-color: $color11;
+
+      .menu-sm {
+        background-color: $color11;
+
+        .close {
+          color: #fff;
+        }
+      }
+
+      a:not(:hover),
+      a.active,
+      .options .custom-select-container .selected-text {
+        color: #fff;
+      }
+
+      .options .custom-select-container .selected-text {
+        &::after {
+          content: url("../assets/vectors/chevron-white.svg");
+        }
+      }
+    }
+
+    #footer {
+      .social {
+        .btn {
+          border-color: #fff;
+
+          img {
+            filter: invert(97%) sepia(97%) saturate(14%) hue-rotate(235deg)
+              brightness(104%) contrast(102%);
+          }
+        }
+      }
+    }
+  }
+
+  #landing-hero {
+    .search-container,
+    .search-container input {
+      background-color: $color10;
+    }
+
+    .search-container img {
+      filter: invert(100%) sepia(1%) saturate(0%) hue-rotate(186deg)
+        brightness(105%) contrast(101%);
+    }
+  }
+
+  #landing-process {
+    .bg-left-dark,
+    .bg-right-dark {
+      opacity: 1;
+    }
+
+    .bg-left,
+    .bg-right {
+      opacity: 0;
+    }
+
+    .cards {
+      .arrow-1,
+      .arrow-2 {
+        filter: invert(94%) sepia(0%) saturate(0%) hue-rotate(276deg)
+          brightness(110%) contrast(101%);
+      }
+
+      .card {
+        background-color: $color10;
+
+        h5 {
+          color: $color1;
+        }
+      }
+    }
+  }
+
+  #landing-categories {
+    background-color: $color10;
+  }
+
+  #landing-stats {
+    .card {
+      background-color: $color10;
+    }
+  }
+
+  #footer {
+    position: relative;
+    background-color: $color12;
+
+    .contact-icon {
+      filter: invert(100%) sepia(1%) saturate(0%) hue-rotate(186deg)
+        brightness(105%) contrast(101%);
+    }
+
+    .copyright {
+      color: #fff;
+      border-top-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  #search-results {
+    .result-card {
+      background-color: $color10;
+
+      * {
+        color: #fff;
+      }
+    }
+
+    .filter-items {
+      background-color: $color10;
+
+      .item {
+        &.with-chevron {
+          &::after {
+            content: url("../assets/vectors/chevron-white.svg");
+          }
+        }
+
+        * {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  #post-view-body {
+    .plans {
+      background-color: $color10;
+      border-color: transparent;
+
+      * {
+        color: #fff;
+      }
+    }
+
+    .tabs {
+      border-color: transparent;
+
+      .tab {
+        background-color: $color12;
+        border-color: transparent;
+      }
+    }
+
+    .user-info {
+      * {
+        color: #fff;
+      }
+    }
+  }
 }

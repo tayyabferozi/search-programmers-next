@@ -30,7 +30,7 @@ const Button = ({
   } else {
     return (
       <button className={classes} {...rest}>
-        <div className="btn-text">{children}</div>;
+        <div className="btn-text">{children}</div>
       </button>
     );
   }
