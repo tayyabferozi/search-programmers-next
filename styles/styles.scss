@@ -1307,6 +1307,10 @@
       .tab {
         background-color: $color12;
         border-color: transparent;
+
+        &.active {
+          background-color: $color10;
+        }
       }
     }
 
