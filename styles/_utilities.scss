@@ -118,7 +118,7 @@ a {
   background-color: transparent;
   border: none;
   height: 50px;
-  display: inline-flex;
+  display: inline-flex !important;
   justify-content: center;
   align-items: center;
   cursor: pointer;
