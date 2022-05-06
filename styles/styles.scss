@@ -1029,6 +1029,66 @@
       }
     }
   }
+
+  .plans {
+    border: 1px solid #dadbdd;
+
+    .tabs {
+      display: flex;
+      border-bottom: 1px solid #dadbdd;
+
+      .tab {
+        flex-grow: 1;
+        height: 60px;
+        background-color: #fafafa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-weight: bold;
+        color: $color4;
+        border-right: 1px solid #dadbdd;
+
+        &:last-child {
+          border-right: 0;
+        }
+
+        &.active {
+          background-color: #fff;
+          color: $color1;
+        }
+      }
+    }
+
+    .tab-contents {
+      padding: 1.5rem;
+      background-color: #fff;
+
+      ul {
+        margin-top: 1rem;
+        padding-left: 1.5rem;
+
+        li {
+          position: relative;
+          color: $color4;
+          font-size: 16px;
+          margin-bottom: 0.25rem;
+          font-weight: 500;
+
+          &::before {
+            content: url("../assets/vectors/tick.svg");
+            left: -1.5rem;
+            position: absolute;
+          }
+        }
+      }
+
+      .btn {
+        margin-top: 2rem;
+        width: 100%;
+      }
+    }
+  }
 }
 
 #form-login,
@@ -1223,4 +1283,8 @@
   .dark-mode #post-view-body .body p {
     font-size: 0.9rem;
   }
+}
+
+.text-wrap {
+  position: relative;
 }
